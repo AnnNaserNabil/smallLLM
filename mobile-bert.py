@@ -71,24 +71,27 @@ def main():
     data_collator = DataCollatorWithPadding(tokenizer=tokenizer, padding="longest")
     
     # Train
-    print("Training model...")
     trainer = Trainer(
-        model=model,
-        args=TrainingArguments(
-            output_dir='./results',
-            num_train_epochs=CONFIG['training']['num_epochs'],
-            per_device_train_batch_size=CONFIG['training']['batch_size'],
-            per_device_eval_batch_size=CONFIG['training']['batch_size']*2,
-            evaluation_strategy="epoch",
-            save_strategy="epoch",
-            load_best_model_at_end=True,
-            metric_for_best_model="f1",
-            **{k: v for k, v in CONFIG['training'].items() if k in ['learning_rate', 'weight_decay', 'warmup_steps', 'fp16', 'gradient_checkpointing']}
-        ),
-        train_dataset=tokenized_datasets['train'],
-        eval_dataset=tokenized_datasets['validation'],
-        compute_metrics=compute_metrics,
-        data_collator=data_collator
+    model=model,
+    args=TrainingArguments(
+        output_dir='./results',
+        num_train_epochs=CONFIG['training']['num_epochs'],
+        per_device_train_batch_size=CONFIG['training']['batch_size'],
+        per_device_eval_batch_size=CONFIG['training']['batch_size']*2,
+        evaluation_strategy="epoch",
+        save_strategy="epoch",
+        load_best_model_at_end=True,
+        metric_for_best_model="f1",
+        learning_rate=CONFIG['training']['learning_rate'],
+        weight_decay=CONFIG['training']['weight_decay'],
+        warmup_steps=CONFIG['training']['warmup_steps'],
+        fp16=CONFIG['training']['fp16']
+        # gradient_checkpointing removed
+    ),
+    train_dataset=tokenized_datasets['train'],
+    eval_dataset=tokenized_datasets['validation'],
+    compute_metrics=compute_metrics,
+    data_collator=data_collator
     )
     trainer.train()
     

@@ -1,0 +1,467 @@
+Using device: cuda
+
+Training with batch_size=8, lr=5e-05, epochs=3, max_len=128
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 6097.21 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 4827.27 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 4935.17 examples/s]
+ [4308/4308 11:48, Epoch 3/3]
+Step	Training Loss
+500	0.570600
+1000	0.492700
+1500	0.456000
+2000	0.422800
+2500	0.400000
+3000	0.359600
+3500	0.332800
+4000	0.337700
+ [206/206 00:02]
+Test Results: {'eval_accuracy': 0.8223644119439366, 'eval_f1': 0.8223086265752175, 'eval_precision': 0.8223997659043695, 'eval_recall': 0.8223644119439366}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch8_lr5e-05_ep3_ml128.json
+
+Training with batch_size=8, lr=5e-05, epochs=3, max_len=256
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:02<00:00, 5568.34 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 4585.81 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 8231.06 examples/s]
+ [4308/4308 12:40, Epoch 3/3]
+Step	Training Loss
+500	0.572000
+1000	0.496900
+1500	0.441300
+2000	0.409600
+2500	0.400300
+3000	0.366300
+3500	0.342200
+4000	0.346400
+ [206/206 00:02]
+Test Results: {'eval_accuracy': 0.8187081048141377, 'eval_f1': 0.8187164735703888, 'eval_precision': 0.8187322923488106, 'eval_recall': 0.8187081048141377}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch8_lr5e-05_ep3_ml256.json
+
+Training with batch_size=8, lr=5e-05, epochs=5, max_len=128
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 8700.56 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 8326.16 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 8295.95 examples/s]
+ [7180/7180 21:24, Epoch 5/5]
+Step	Training Loss
+500	0.586200
+1000	0.491200
+1500	0.452400
+2000	0.424500
+2500	0.412400
+3000	0.360900
+3500	0.339300
+4000	0.335900
+4500	0.326300
+5000	0.303800
+5500	0.316000
+6000	0.303500
+6500	0.266700
+7000	0.273600
+ [206/206 00:02]
+Test Results: {'eval_accuracy': 0.8254113345521024, 'eval_f1': 0.8254214043902927, 'eval_precision': 0.82544389010865, 'eval_recall': 0.8254113345521024}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch8_lr5e-05_ep5_ml128.json
+
+Training with batch_size=8, lr=5e-05, epochs=5, max_len=256
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map:   0%|          | 0/11484 [00:00<?, ? examples/s]
+Map:   0%|          | 0/1641 [00:00<?, ? examples/s]
+Map:   0%|          | 0/3282 [00:00<?, ? examples/s]
+ [1001/7180 01:55 < 11:56, 8.63 it/s, Epoch 0.70/5]
+Step	Training Loss
+500	0.569100
+ [7180/7180 20:42, Epoch 5/5]
+Step	Training Loss
+500	0.569100
+1000	0.504000
+1500	0.449300
+2000	0.419200
+2500	0.405200
+3000	0.370800
+3500	0.350500
+4000	0.347200
+4500	0.320300
+5000	0.302400
+5500	0.318400
+6000	0.300900
+6500	0.279000
+7000	0.277300
+ [206/206 00:02]
+Test Results: {'eval_accuracy': 0.8275441803778184, 'eval_f1': 0.8275200810494061, 'eval_precision': 0.8275353467743587, 'eval_recall': 0.8275441803778184}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch8_lr5e-05_ep5_ml256.json
+
+Training with batch_size=8, lr=3e-05, epochs=3, max_len=128
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 9795.08 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 7613.15 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 7757.43 examples/s]
+ [4308/4308 12:38, Epoch 3/3]
+Step	Training Loss
+500	0.583900
+1000	0.509200
+1500	0.465500
+2000	0.438900
+2500	0.413800
+3000	0.375400
+3500	0.360200
+4000	0.371200
+ [206/206 00:02]
+Test Results: {'eval_accuracy': 0.8150517976843388, 'eval_f1': 0.814905950753488, 'eval_precision': 0.8153247564797065, 'eval_recall': 0.8150517976843388}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch8_lr3e-05_ep3_ml128.json
+
+Training with batch_size=8, lr=3e-05, epochs=3, max_len=256
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 9255.70 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 8087.65 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 8315.07 examples/s]
+ [4308/4308 12:32, Epoch 3/3]
+Step	Training Loss
+500	0.590300
+1000	0.515100
+1500	0.463300
+2000	0.427600
+2500	0.410300
+3000	0.385300
+3500	0.366600
+4000	0.372900
+ [206/206 00:02]
+Test Results: {'eval_accuracy': 0.8117001828153565, 'eval_f1': 0.8116003271646886, 'eval_precision': 0.8118199850963664, 'eval_recall': 0.8117001828153565}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch8_lr3e-05_ep3_ml256.json
+
+Training with batch_size=8, lr=3e-05, epochs=5, max_len=128
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 9530.07 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 6908.63 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 8288.51 examples/s]
+ [7180/7180 19:56, Epoch 5/5]
+Step	Training Loss
+500	0.587700
+1000	0.502900
+1500	0.464000
+2000	0.439900
+2500	0.414200
+3000	0.374700
+3500	0.360100
+4000	0.360700
+4500	0.345500
+5000	0.336400
+5500	0.335800
+6000	0.341100
+6500	0.304800
+7000	0.319400
+ [206/206 00:02]
+Test Results: {'eval_accuracy': 0.8202315661182206, 'eval_f1': 0.820244789335285, 'eval_precision': 0.8202799456200384, 'eval_recall': 0.8202315661182206}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch8_lr3e-05_ep5_ml128.json
+
+Training with batch_size=8, lr=3e-05, epochs=5, max_len=256
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:02<00:00, 4975.86 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 4997.39 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 8007.57 examples/s]
+ [7180/7180 21:46, Epoch 5/5]
+Step	Training Loss
+500	0.582500
+1000	0.505300
+1500	0.450100
+2000	0.431200
+2500	0.416900
+3000	0.389000
+3500	0.370800
+4000	0.369500
+4500	0.326300
+5000	0.337300
+5500	0.349000
+6000	0.334400
+6500	0.303200
+7000	0.305000
+ [206/206 00:02]
+Test Results: {'eval_accuracy': 0.8254113345521024, 'eval_f1': 0.8253776066968633, 'eval_precision': 0.82541152727333, 'eval_recall': 0.8254113345521024}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch8_lr3e-05_ep5_ml256.json
+
+Training with batch_size=8, lr=1e-05, epochs=3, max_len=128
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:02<00:00, 5475.16 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 5814.73 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 7944.05 examples/s]
+ [4308/4308 12:13, Epoch 3/3]
+Step	Training Loss
+500	0.620100
+1000	0.537400
+1500	0.507600
+2000	0.493900
+2500	0.486600
+3000	0.439300
+3500	0.458200
+4000	0.441500
+ [206/206 00:02]
+Test Results: {'eval_accuracy': 0.7906764168190128, 'eval_f1': 0.7903967485003479, 'eval_precision': 0.7912329697134489, 'eval_recall': 0.7906764168190128}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch8_lr1e-05_ep3_ml128.json
+
+Training with batch_size=8, lr=1e-05, epochs=3, max_len=256
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 9502.15 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 7171.15 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 8150.98 examples/s]
+ [4308/4308 11:57, Epoch 3/3]
+Step	Training Loss
+500	0.621100
+1000	0.535900
+1500	0.502200
+2000	0.486700
+2500	0.476600
+3000	0.443400
+3500	0.446700
+4000	0.442900
+ [206/206 00:02]
+Test Results: {'eval_accuracy': 0.7903717245581963, 'eval_f1': 0.7898695501507403, 'eval_precision': 0.7917146690917614, 'eval_recall': 0.7903717245581963}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch8_lr1e-05_ep3_ml256.json
+
+Training with batch_size=8, lr=1e-05, epochs=5, max_len=128
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 6297.46 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 5028.01 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 5195.60 examples/s]
+ [7180/7180 20:17, Epoch 5/5]
+Step	Training Loss
+500	0.619200
+1000	0.533700
+1500	0.503500
+2000	0.493400
+2500	0.480100
+3000	0.437600
+3500	0.439500
+4000	0.430300
+4500	0.420600
+5000	0.403600
+5500	0.413000
+6000	0.418200
+6500	0.387800
+7000	0.399000
+ [206/206 00:02]
+Test Results: {'eval_accuracy': 0.8013406459475929, 'eval_f1': 0.8012907259150674, 'eval_precision': 0.8013414886331769, 'eval_recall': 0.8013406459475929}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch8_lr1e-05_ep5_ml128.json
+
+Training with batch_size=8, lr=1e-05, epochs=5, max_len=256
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 9022.64 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 7246.85 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 8180.73 examples/s]
+ [7180/7180 20:50, Epoch 5/5]
+Step	Training Loss
+500	0.618900
+1000	0.533600
+1500	0.503500
+2000	0.484000
+2500	0.472100
+3000	0.435400
+3500	0.430500
+4000	0.431000
+4500	0.400000
+5000	0.399500
+5500	0.418300
+6000	0.405900
+6500	0.380300
+7000	0.391000
+ [206/206 00:02]
+Test Results: {'eval_accuracy': 0.8046922608165753, 'eval_f1': 0.8045661704444025, 'eval_precision': 0.804860706875344, 'eval_recall': 0.8046922608165753}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch8_lr1e-05_ep5_ml256.json
+
+Training with batch_size=16, lr=5e-05, epochs=3, max_len=128
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 9353.55 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 5079.08 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 5569.98 examples/s]
+ [2154/2154 07:11, Epoch 3/3]
+Step	Training Loss
+500	0.541500
+1000	0.431100
+1500	0.379100
+2000	0.334100
+ [103/103 00:01]
+Test Results: {'eval_accuracy': 0.8260207190737355, 'eval_f1': 0.8260015968176149, 'eval_precision': 0.8260084113356552, 'eval_recall': 0.8260207190737355}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch16_lr5e-05_ep3_ml128.json
+
+Training with batch_size=16, lr=5e-05, epochs=3, max_len=256
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 8660.94 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 6734.27 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 8104.85 examples/s]
+ [2154/2154 06:48, Epoch 3/3]
+Step	Training Loss
+500	0.552300
+1000	0.428700
+1500	0.381300
+2000	0.343000
+ [103/103 00:01]
+Test Results: {'eval_accuracy': 0.8208409506398537, 'eval_f1': 0.8207823378503822, 'eval_precision': 0.8208799971008981, 'eval_recall': 0.8208409506398537}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch16_lr5e-05_ep3_ml256.json
+
+Training with batch_size=16, lr=5e-05, epochs=5, max_len=128
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 5599.98 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 6798.32 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 8548.28 examples/s]
+ [3590/3590 11:45, Epoch 5/5]
+Step	Training Loss
+500	0.534100
+1000	0.423300
+1500	0.378000
+2000	0.327500
+2500	0.294600
+3000	0.290500
+3500	0.260700
+ [103/103 00:01]
+Test Results: {'eval_accuracy': 0.8211456429006703, 'eval_f1': 0.8211596738124496, 'eval_precision': 0.8218180419700213, 'eval_recall': 0.8211456429006703}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch16_lr5e-05_ep5_ml128.json
+
+Training with batch_size=16, lr=5e-05, epochs=5, max_len=256
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 9307.09 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 6910.81 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 8271.81 examples/s]
+ [3590/3590 11:34, Epoch 5/5]
+Step	Training Loss
+500	0.544500
+1000	0.422700
+1500	0.372800
+2000	0.334200
+2500	0.290300
+3000	0.297200
+3500	0.263800
+ [103/103 00:01]
+Test Results: {'eval_accuracy': 0.825716026812919, 'eval_f1': 0.825718487502499, 'eval_precision': 0.8257215616253276, 'eval_recall': 0.825716026812919}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch16_lr5e-05_ep5_ml256.json
+
+Training with batch_size=16, lr=3e-05, epochs=3, max_len=128
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 9015.19 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 6949.35 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 7718.24 examples/s]
+ [2154/2154 07:13, Epoch 3/3]
+Step	Training Loss
+500	0.557800
+1000	0.452900
+1500	0.403100
+2000	0.368500
+ [103/103 00:01]
+Test Results: {'eval_accuracy': 0.8107861060329068, 'eval_f1': 0.8106703597055492, 'eval_precision': 0.8109470160761062, 'eval_recall': 0.8107861060329068}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch16_lr3e-05_ep3_ml128.json
+
+Training with batch_size=16, lr=3e-05, epochs=3, max_len=256
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:02<00:00, 7547.75 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 6472.84 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 7917.56 examples/s]
+ [2154/2154 06:41, Epoch 3/3]
+Step	Training Loss
+500	0.555500
+1000	0.456100
+1500	0.405700
+2000	0.379400
+ [103/103 00:01]
+Test Results: {'eval_accuracy': 0.807739183424741, 'eval_f1': 0.8073741825260119, 'eval_precision': 0.8088020710898194, 'eval_recall': 0.807739183424741}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch16_lr3e-05_ep3_ml256.json
+
+Training with batch_size=16, lr=3e-05, epochs=5, max_len=128
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 5372.33 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 6975.25 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 7520.42 examples/s]
+ [3590/3590 11:12, Epoch 5/5]
+Step	Training Loss
+500	0.556300
+1000	0.449200
+1500	0.402600
+2000	0.358600
+2500	0.328800
+3000	0.331600
+3500	0.306100
+ [103/103 00:01]
+Test Results: {'eval_accuracy': 0.8171846435100548, 'eval_f1': 0.8172100364932201, 'eval_precision': 0.8175291775741014, 'eval_recall': 0.8171846435100548}
+✅ Metrics saved to ./metrics/XLM-Roberta-Comet-Small_batch16_lr3e-05_ep5_ml128.json
+
+Training with batch_size=16, lr=3e-05, epochs=5, max_len=256
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at Unbabel/xlm-roberta-comet-small and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map: 100%
+ 11484/11484 [00:01<00:00, 8980.26 examples/s]
+Map: 100%
+ 1641/1641 [00:00<00:00, 6635.32 examples/s]
+Map: 100%
+ 3282/3282 [00:00<00:00, 7663.38 examples/s]
+ [ 342/3590 00:22 < 03:31, 15.35 it/s, Epoch 0.47/5]
+Step	Training Loss
